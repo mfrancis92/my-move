@@ -1,0 +1,53 @@
+/* IMPORTS CSS RESET */
+@import 'resets';
+
+/* IMPORTS FONTS */
+@import 'fonts';
+
+/* IMPORTS INDEX: HEADER */
+@import 'indexheader';
+
+/* IMPORTS SECOND INDEX NAV AND LOAD MORE */
+@import 'indexmain';
+
+/* IMPORTS INDEX: MAIN ARTICLE */
+@import 'mainarticle';
+
+/* IMPORTS INDEX: SUB ARTICLES */
+@import 'subarticles';
+
+/* IMPORTS FOOTER */
+@import 'footer';
+
+/* IMPORTS MOVE: HEADER */
+@import 'moveheader';
+
+/*IMPORTS SECOND MOVE NAV */
+@import 'visitednav';
+
+/*IMPORTS MOVE: TABLE OF CONTENTS */
+@import 'movetoc';
+
+/* IMPORTS MOVE: SECTIONS */
+@import 'sections';
+
+
+/* IMPORT MOVE: DATA TABLE*/
+@import 'datatable';
+
+/* ===============================================================================================
+UNIVERSAL STYLES
+================================================================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+    
+
+

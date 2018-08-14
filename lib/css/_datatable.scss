@@ -1,0 +1,24 @@
+.data-table {
+    margin-top: 40px;
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    width: 670px;
+    height: 276px;
+
+    .data-table__header-row {
+        background-color: #F5F5F5;
+
+        th{
+            height: 56px;
+        font-size: 16px;
+
+        } 
+    }
+    .data-table__body{
+        tr, td {
+            border: 1px solid #CCCCCC;
+            text-align: center;
+        }
+        
+    }
+}

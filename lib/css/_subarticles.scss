@@ -1,0 +1,86 @@
+.sub-container {
+    width: 1170px;
+    margin-left: 135px;
+
+    .sub-container__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sub-container__article {
+        margin-bottom: 30px;
+        width: 370px;
+        height: 549px;
+        position: relative;
+        box-shadow: 0 0 45px #ccc;
+
+        .sub-container__pic {
+            padding: 30px;
+        }
+
+        .sub-container__btn {
+            padding: 5px 20px;
+            font-family: 'RVMontserrat';
+            color: #3949AB;
+            font-size: 12px;
+            border: 1px solid #3949AB;
+            border-radius: 100px;
+            margin: 0 0 15px 30px;
+            text-transform: uppercase;
+        }
+
+        .sub-container__title {
+            font-family: 'RVMontserrat Bold';
+            font-size: 26px;
+            color: #424242;
+            letter-spacing: 0;
+            line-height: 34px;
+            margin: 0 30px;
+        }
+
+        .sub-container__desc {
+            font-family: Georgia;
+            font-size: 14px;
+            color: #000;
+            line-height: 19px;
+            margin: 10px 22px 0 30px;
+        }
+
+        .sub-container__footer {
+            height: 91px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-top: 1px #eee solid;
+
+            .sub-container__footer__pic {
+                padding-left: 31px;
+            }
+
+            .sub-container__footer__text {
+                padding-left: 15px;
+
+                .sub-container__footer__author {
+                    font-family: 'RVMontserrat SemiBold';
+                    font-size: 12px;
+                    color: #424242;
+                    letter-spacing: 0.86px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+
+                .sub-container__footer__date {
+                    font-family: 'RVMontserrat Regular';
+                    font-size: 12px;
+                    color: #757575;
+                    letter-spacing: 0.86px;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,954 @@
+/* IMPORTS CSS RESET */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* IMPORTS FONTS */
+@font-face {
+  font-family: "RVMontserrat Light";
+  src: url("../fonts/rv-montserrat-light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "RVMontserrat Regular";
+  src: url("../fonts/rv-montserrat-regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RVMontserrat Semibold";
+  src: url("../fonts/rv-montserrat-semibold.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "RVMontserrat Bold";
+  src: url("../fonts/rv-montserrat-bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("../fonts/opensans-bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("../fonts/opensans-regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SourceSerifPro";
+  src: url("../fonts/sourceserifpro-regular.otf") format("opentype");
+  font-weight: 400;
+}
+/* IMPORTS INDEX: HEADER */
+.header {
+  text-align: center;
+  background-color: #3949AB;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.header .header__nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.header .header__nav .header__nav__logo {
+  margin-left: 38px;
+}
+.header .header__nav .header__nav__ul {
+  margin-left: auto;
+}
+.header .header__nav .header__nav__ul .header__nav__li {
+  font-family: "RVmontserrat Regular";
+  font-size: 12px;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: right;
+  padding: 17px;
+}
+.header .header__nav .hamburger {
+  margin-left: 40px;
+  margin-right: 27px;
+}
+.header .header__content {
+  padding-top: 40px;
+  padding-bottom: 128px;
+}
+.header .header__content .header__h1 {
+  padding-bottom: 18px;
+  font-family: "RVMontserrat Regular";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #FDD835;
+  text-transform: uppercase;
+}
+.header .header__content .header__h2 {
+  font-family: "RVMontserrat Bold";
+  font-size: 54px;
+  line-height: 56px;
+  color: #fff;
+}
+.header .header__content .header__text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  margin: 33px;
+}
+
+/* IMPORTS SECOND INDEX NAV AND LOAD MORE */
+.indexnav {
+  margin-top: 42px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.indexnav .indexnav__ul {
+  margin-left: 158px;
+  text-align: center;
+}
+.indexnav .indexnav__ul .indexnav__li {
+  font-family: "RVMontserrat Regular";
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  padding: 17px;
+  color: #545454;
+}
+.indexnav .indexnav__ul .indexnav__li .indexnav__link {
+  color: #545454;
+}
+.indexnav .indexnav__ul .indexnav__li .indexnav__active {
+  color: #303f9f;
+}
+.indexnav .indexnav__ul .indexnav__li:first-child {
+  border-bottom: 3px #303f9f solid;
+  font-family: "RVMontserrat Bold";
+}
+
+.btn {
+  font-family: "RVMontserrat Semibold";
+  margin-right: 135px;
+  border: none;
+  background-color: #536DFE;
+  font-size: 14px;
+  color: #fff;
+  line-height: 14px;
+  letter-spacing: 0.24px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.readmore {
+  margin: 76px 134px 94px 135px;
+}
+.readmore .readmore__hr {
+  border: 0;
+  width: 1171px;
+  height: 1px;
+  position: relative;
+  color: #D8D8D8;
+  background-color: #D8D8D8;
+}
+.readmore .readmore__break {
+  background-color: #fff;
+  position: absolute;
+  height: 100px;
+  margin: -48px 385px;
+}
+.readmore .readmore__break .readmore__btn {
+  font-family: "RVMontserrat semibold";
+  width: 249px;
+  height: 48px;
+  margin: 24px 60px;
+  border: none;
+  background-color: #536DFE;
+  font-size: 14px;
+  color: #fff;
+  line-height: 14px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+/* IMPORTS INDEX: MAIN ARTICLE */
+.article__main {
+  display: flex;
+  margin: 40px 135px 30px 135px;
+  box-shadow: 0 0 45px #ccc;
+}
+
+.article__main__pic {
+  padding: 30px 0 29px 30px;
+}
+
+.moving__btn {
+  padding: 5px 20px;
+  font-family: "RVMontserrat Regular";
+  color: #3949AB;
+  font-size: 12px;
+  border: 1px solid #3949AB;
+  border-radius: 100px;
+}
+
+.article__main__sec {
+  padding: 60px 42px 30px 0;
+  margin-left: 49px;
+}
+
+.article__main__title {
+  width: 536px;
+  font-family: "RVMontserrat Bold";
+  color: #424242;
+  line-height: 50px;
+  font-size: 42px;
+  padding: 15px 0px;
+}
+
+.article__main__descr {
+  padding-bottom: 63px;
+  border-bottom: #eee solid 1px;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0;
+}
+
+.article__main__footer {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+}
+.article__main__footer .small__logo {
+  padding-right: 15px;
+}
+.article__main__footer .article__author {
+  font-family: "RVMontserrat SemiBold";
+  font-size: 12px;
+  color: #424242;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.article__main__footer .article__date {
+  font-family: "RVMontserrat Regular";
+  font-size: 12px;
+  color: #757575;
+  letter-spacing: 0.86px;
+}
+
+/* IMPORTS INDEX: SUB ARTICLES */
+.sub-container {
+  width: 1170px;
+  margin-left: 135px;
+}
+.sub-container .sub-container__row {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-container .sub-container__article {
+  margin-bottom: 30px;
+  width: 370px;
+  height: 549px;
+  position: relative;
+  box-shadow: 0 0 45px #ccc;
+}
+.sub-container .sub-container__article .sub-container__pic {
+  padding: 30px;
+}
+.sub-container .sub-container__article .sub-container__btn {
+  padding: 5px 20px;
+  font-family: "RVMontserrat";
+  color: #3949AB;
+  font-size: 12px;
+  border: 1px solid #3949AB;
+  border-radius: 100px;
+  margin: 0 0 15px 30px;
+  text-transform: uppercase;
+}
+.sub-container .sub-container__article .sub-container__title {
+  font-family: "RVMontserrat Bold";
+  font-size: 26px;
+  color: #424242;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin: 0 30px;
+}
+.sub-container .sub-container__article .sub-container__desc {
+  font-family: Georgia;
+  font-size: 14px;
+  color: #000;
+  line-height: 19px;
+  margin: 10px 22px 0 30px;
+}
+.sub-container .sub-container__article .sub-container__footer {
+  height: 91px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px #eee solid;
+}
+.sub-container .sub-container__article .sub-container__footer .sub-container__footer__pic {
+  padding-left: 31px;
+}
+.sub-container .sub-container__article .sub-container__footer .sub-container__footer__text {
+  padding-left: 15px;
+}
+.sub-container .sub-container__article .sub-container__footer .sub-container__footer__text .sub-container__footer__author {
+  font-family: "RVMontserrat SemiBold";
+  font-size: 12px;
+  color: #424242;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.sub-container .sub-container__article .sub-container__footer .sub-container__footer__text .sub-container__footer__date {
+  font-family: "RVMontserrat Regular";
+  font-size: 12px;
+  color: #757575;
+  letter-spacing: 0.86px;
+}
+
+/* IMPORTS FOOTER */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #3949AB;
+}
+.footer .footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__nav .footer__nav__ul {
+  padding-top: 84px;
+  padding-left: 144px;
+}
+.footer .footer__nav .footer__nav__ul .footer__nav__li {
+  font-family: "RVMontserrat Regular";
+  font-size: 16px;
+  letter-spacing: 1.14px;
+  line-height: 33px;
+}
+.footer .footer__nav .footer__nav__ul .footer__nav__link {
+  text-transform: capitalize;
+}
+.footer .footer__nav .footer__icons {
+  display: flex;
+}
+.footer .footer__nav .footer__icons .footer__nav__logo {
+  padding-top: 20px;
+}
+.footer .footer__nav .footer__icons .footer__socialicons {
+  padding: 75px 142px 35px 44.58px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__nav .footer__icons .footer__socialicons .footer__socialicons__pic {
+  padding-bottom: 16px;
+}
+.footer .footer__policy__ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.footer .footer__policy__ul .footer__policy__li {
+  font-family: "RVMontserrat Light";
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 24px;
+  padding-left: 10px;
+  color: #fff;
+}
+.footer .footer__policy__ul .footer__policy__li:last-child::after {
+  content: none;
+}
+.footer .footer__policy__ul .footer__policy__li::after {
+  padding-left: 10px;
+  content: "|";
+}
+
+/* IMPORTS MOVE: HEADER */
+.moveheader {
+  text-align: center;
+  background-image: linear-gradient(175deg, #536DFE 0%, #3F51B5 46%);
+  width: 1440px;
+  height: 90px;
+}
+.moveheader .moveheader__nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.moveheader .moveheader__nav .header__nav__logo {
+  margin: 28px 0 25px 38px;
+}
+.moveheader .moveheader__nav .header__nav__ul {
+  margin-left: auto;
+}
+.moveheader .moveheader__nav .header__nav__ul .header__nav__li {
+  font-family: "RVmontserrat Regular";
+  font-size: 12px;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: right;
+  padding: 17px;
+}
+.moveheader .moveheader__nav .hamburger {
+  margin-left: 40px;
+  margin-right: 27px;
+}
+.moveheader .header__content {
+  padding-top: 40px;
+  padding-bottom: 128px;
+}
+.moveheader .header__content .header__h1 {
+  padding-bottom: 18px;
+  font-family: "RVMontserrat Regular";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #FDD835;
+  text-transform: uppercase;
+}
+.moveheader .header__content .header__h2 {
+  font-family: "RVMontserrat Bold";
+  font-size: 54px;
+  line-height: 56px;
+  color: #fff;
+}
+.moveheader .header__content .header__text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  margin: 33px;
+}
+
+/*IMPORTS SECOND MOVE NAV */
+.articles__top {
+  margin-left: 338px;
+}
+.articles__top .visited__nav__ul {
+  display: flex;
+  height: 24px;
+  margin-top: 60px;
+}
+.articles__top .visited__nav__li {
+  font-family: "RVMontserrat SemiBold";
+  font-size: 12px;
+  letter-spacing: 0.86px;
+  line-height: 24px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+.articles__top .visited__nav__link {
+  color: #303F9F;
+}
+.articles__top .active {
+  color: #424;
+}
+
+.mainart-pic {
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.mainart-container__content {
+  width: 767px;
+  font-family: "RVMontserrat Bold";
+  font-size: 42px;
+  color: #424242;
+  line-height: 48px;
+}
+
+/*IMPORTS MOVE: TABLE OF CONTENTS */
+.toc-container__header {
+  width: 931px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: Tahoma-Bold;
+  font-size: 30px;
+  color: #424242;
+  line-height: 32px;
+}
+
+.toc-container__table {
+  margin: auto;
+  width: 931px;
+  height: 392px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #eee;
+}
+.toc-container__table .toc-container__table__data {
+  font-family: "RVMontserrat Light";
+  font-size: 16px;
+  color: #3949AB;
+  line-height: 24px;
+}
+
+/* IMPORTS MOVE: SECTIONS */
+.sections-container {
+  width: 670px;
+  margin: auto;
+}
+.sections-container .section__header {
+  padding-top: 40px;
+  font-family: Tahoma-Bold;
+  font-size: 30px;
+  color: #424242;
+  line-height: 32px;
+}
+.sections-container .liststyle {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+.sections-container .section__header__content {
+  padding-top: 30px;
+  width: 670px;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 33px;
+}
+.sections-container .section__header__content .section__header__content--underline {
+  text-decoration: underline;
+}
+.sections-container .section__header__content .section__header__content--blue {
+  color: #3949AB;
+}
+.sections-container .section__header__sub {
+  font-family: Tahoma;
+  font-weight: 300;
+  font-size: 21px;
+  color: #757575;
+  line-height: 32px;
+}
+
+figure {
+  padding: 60px 0;
+}
+figure figcaption {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 12px;
+  color: #757575;
+  line-height: 24px;
+}
+
+blockquote {
+  margin-top: 40px;
+  font-family: Georgia-Italic;
+  font-size: 28px;
+  color: #757575;
+  line-height: 40px;
+}
+
+.section__header__authorarticle {
+  margin-top: 60px;
+  border-top: 3px solid #eee;
+  padding-top: 30px;
+  font-family: Georgia-Italic;
+  font-size: 18px;
+  color: #424242;
+  line-height: 30px;
+}
+.section__header__authorarticle .section__header__authorarticle--blue {
+  color: #3949AB;
+  font-family: Georgia-BoldItalic;
+}
+
+.rearticles {
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 1170px;
+  font-family: RVMontserrat-Bold;
+  font-size: 24px;
+  color: #424242;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+/* IMPORT MOVE: DATA TABLE*/
+.data-table {
+  margin-top: 40px;
+  border: 1px solid #CCCCCC;
+  border-collapse: collapse;
+  width: 670px;
+  height: 276px;
+}
+.data-table .data-table__header-row {
+  background-color: #F5F5F5;
+}
+.data-table .data-table__header-row th {
+  height: 56px;
+  font-size: 16px;
+}
+.data-table .data-table__body tr, .data-table .data-table__body td {
+  border: 1px solid #CCCCCC;
+  text-align: center;
+}
+
+/* ===============================================================================================
+UNIVERSAL STYLES
+================================================================================================= */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=output.css.map */

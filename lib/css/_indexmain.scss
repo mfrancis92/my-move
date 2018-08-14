@@ -1,0 +1,84 @@
+.indexnav {
+    margin-top: 42px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .indexnav__ul {
+        margin-left: 158px;
+        text-align: center;
+
+        .indexnav__li {
+            font-family: 'RVMontserrat Regular';
+            text-align: center;
+            display: inline-block;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: .75px;
+            padding: 17px;
+            color: #545454;
+
+            .indexnav__link {
+                color: #545454;
+            }
+
+            .indexnav__active {
+                color: #303f9f;
+            }
+
+            &:first-child {
+                border-bottom: 3px #303f9f solid;
+                font-family: 'RVMontserrat Bold';
+            }
+        }
+    }
+}
+
+.btn {
+    font-family: 'RVMontserrat Semibold';
+    margin-right: 135px; 
+    border: none;
+    background-color: #536DFE;
+    font-size: 14px;
+    color: #fff;
+    line-height: 14px;
+    letter-spacing: .24px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+.readmore {
+    margin: 76px 134px 94px 135px;
+
+    .readmore__hr {
+        border: 0;
+        width: 1171px;
+        height: 1px;
+        position: relative;
+        color: #D8D8D8;
+        background-color: #D8D8D8;
+    }
+
+    .readmore__break {
+        background-color: #fff;
+        position: absolute;
+        height: 100px;
+        margin: -48px 385px;
+
+        .readmore__btn {
+            font-family: 'RVMontserrat semibold';
+            width: 249px;
+            height: 48px;
+            margin: 24px 60px; 
+            border: none;
+            background-color: #536DFE;
+            font-size: 14px;
+            color: #fff;
+            line-height: 14px;
+            letter-spacing: .24px;
+            text-transform: uppercase;
+        }
+    }
+    
+}

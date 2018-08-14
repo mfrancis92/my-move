@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #3949AB;
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+
+        .footer__nav__ul {
+            padding-top: 84px;
+            padding-left: 144px;
+
+            .footer__nav__li {   
+                font-family: 'RVMontserrat Regular';
+                font-size: 16px;
+                letter-spacing: 1.14px;
+                line-height: 33px;
+            }
+            
+            .footer__nav__link {
+                text-transform: capitalize;
+            }
+        }
+        .footer__icons {
+            display: flex;
+
+            .footer__nav__logo {
+                padding-top: 20px; 
+            }
+
+            .footer__socialicons {
+                padding: 75px 142px 35px 44.58px;
+                display: flex;
+                flex-direction: column;
+
+                .footer__socialicons__pic {
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        
+    }
+    
+    .footer__policy__ul {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+
+        .footer__policy__li {
+            font-family: 'RVMontserrat Light';
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 24px;
+            padding-left: 10px;
+            color: #fff;
+            
+            &:last-child::after {
+                content: none;
+            }
+        }
+        .footer__policy__li::after {
+            padding-left: 10px;
+            content: "|";
+        }
+    }
+}
